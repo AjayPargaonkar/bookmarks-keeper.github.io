@@ -72,7 +72,7 @@ function buildBookmarks()
     linkInfo.classList.add('name');
     //favicon 
     const favicon = document.createElement('img');
-    favicon.setAttribute('src', 'favicon.png');
+    favicon.setAttribute('src', 'bookmark-solid.svg');
     favicon.setAttribute('alt', 'Favicon');
     //Link 
     const link = document.createElement('a');
