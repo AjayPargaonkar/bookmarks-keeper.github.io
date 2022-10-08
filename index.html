@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark Website</title>
+    <link rel="icon" type="image/png" href="titlelogo1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img 
+        {
+            border-radius:20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Creating Add Bookmark-->
+    <h2 id="show-modal">Add Bookmark</h2>
+    <!-- Bookmarks -->
+      <div class="container" id="bookmarks-container">
+        <!-- <div class="item">
+            <i class="fas fa-times" id="delete-bookmark" title="Delete Bookmark"></i>
+            <div class="name">
+                <img src="favicon.png" alt="">
+                <a href="www.google.com" target="_blank">one item</a>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fas fa-times" id="delete-bookmark" title="Delete Bookmark"></i>
+            <div class="name">
+                <img src="favicon.png" alt="">
+                <a href="www.google.com" target="_blank">one item</a>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fas fa-times" id="delete-bookmark" title="Delete Bookmark"></i>
+            <div class="name">
+                <img src="favicon.png" alt="">
+                <a href="www.google.com" target="_blank">one item</a>
+            </div>
+        </div> -->
+      </div>
+
+      <div class="modal-container" id="modal">
+        <div class="modal">
+            <i class="fas fa-times close-icon" id="close-modal"></i>
+            <div class="modal-header">
+                <h3>Add Bookmark</h3>
+            </div>
+            <div class="model-content">
+                <form id="bookmark-form">
+                    <!-- Webiste Name -->
+                    <div class="form-group">
+                        <label for="website-name" class="form-label">Website Name</label>
+                        <input type="text" id="website-name" class="form-input">
+                    </div>
+
+                    <!-- Webist url -->
+                    <div class="form-group">
+                        <label for="website-url" class="form-label">Website url</label>
+                        <input type="text" id="website-url" class="form-input">
+                    </div>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+      </div>
+    <script src="myscript.js">
+    </script>
+</body>
+</html>
